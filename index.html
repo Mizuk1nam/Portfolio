@@ -10,6 +10,7 @@
         color: #e5e5e5;
         margin: 0;
         padding: 0;
+        font-size: 17px;
       }
 
       header {
@@ -48,7 +49,6 @@
       nav a:hover {
         background-color: #00c3ff;
         color: #000;
-        border-color: #00c3ff;
       }
 
       section {
@@ -60,40 +60,25 @@
 
       h2 {
         color: #00c3ff;
+        text-align: center;
       }
 
       h3 {
         color: #00aeef;
+        text-align: center;
       }
 
-      ul li {
-        margin-bottom: 8px;
-      }
-
-      form input,
-      form textarea {
-        width: 100%;
-        background-color: #2e2e2e;
-        border: 1px solid #494949;
-        color: white;
-        padding: 10px;
-        margin-bottom: 15px;
-      }
-
-      button {
-        background-color: #00aeff;
-        border: none;
-        padding: 10px 20px;
-        color: black;
-        font-weight: bold;
+      section p {
+        text-align: center;
+        font-size: 18px;
+        max-width: 700px;
+        margin: 0 auto 30px auto;
+        color: #cccbcb;
       }
 
       a {
-        color: #00c3ff;
-      }
-
-      a:hover {
-        color: #009fcc;
+        color: inherit;
+        text-decoration: none;
       }
 
       footer {
@@ -102,129 +87,105 @@
         color: #807f7f;
       }
 
-      #resume a {
-        margin-top: 10px;
-        padding: 10px 18px;
-        border-radius: 4px;
+      .navCv {
         background-color: #00c3ff;
         color: #000000;
-        font-weight: bold;
-      }
-
-      .nav-cv {
-        background-color: #00c3ff;
-        color: #000000;
-        border: none;
         padding: 8px 16px;
         border-radius: 999px;
         font-weight: bold;
       }
 
-      .project-logo {
-        width: 150px;
-        border-radius: 10px;
-        margin: 15px auto;
-        display: block;
+      #about ul {
+        text-align: center;
+        list-style-position: inside;
+        padding-left: 0;
+        margin: 0 auto;
+        max-width: 700px;
       }
 
-      .projects {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-        justify-items: center;
-      }
-
-      .projects article {
-        width: 260px;
-        max-width: 280px;
-        margin: 0;
-        background-color: #111111;
-        border-radius: 12px;
-        padding: 30px 25px; 
-        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
-        border: 1px solid #000000;
-      }
-
-      .projects article:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7);
-      }
-
-      .skills {
+      .projectGrid {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        justify-content: center;
         margin-top: 20px;
       }
 
-      .skill-group {
-        flex: 1 1 260px;
+      .projectGrid a {
+        display: block;
+        flex: 1 1 220px;
+        max-width: 260px;
+      }
+
+      .projectCard {
         background-color: #111111;
         border-radius: 12px;
-        padding: 20px;
-        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+        padding: 18px 18px 20px 18px;
         border: 1px solid #000000;
-      }
-
-      .skill-group h3 {
-        margin-top: 0;
-        margin-bottom: 12px;
-      }
-
-      .skill-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+        transition: 0.2s;
+        cursor: pointer;
+        text-align: center;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 8px;
       }
 
-      .skill-list li {
-        margin-bottom: 0;
+      .projectCard:hover {
+        transform: translateY(-5px);
+        border-color: #00c3ff;
+      }
+
+   .skillsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.skillGroup {
+  width: 100%;
+  flex: none;
+}
+
+      .skillList {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        margin: 0;
+      }
+
+      .skillList li {
         background-color: #242323;
         border-radius: 999px;
         padding: 6px 12px;
         font-size: 14px;
       }
 
-      .social-links {
+      .socialLinks {
         display: flex;
         gap: 20px;
         justify-content: center;
         flex-wrap: wrap;
-        margin-top: 20px;
       }
 
-      .social-card {
+      .socialCard {
         width: 200px;
         background-color: #111111;
-        border: 1px solid #000;
         border-radius: 12px;
         padding: 20px;
-        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
         text-align: center;
-        text-decoration: none;
-        color: #e5e5e5;
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
       }
 
-      .social-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7);
-        color: #00c3ff;
-      }
-
-      .social-card img {
+      .socialCard img {
         width: 55px;
         margin-bottom: 12px;
-        border-radius: 8px;
       }
     </style>
   </head>
+
   <body>
     <header>
       <h1>Lorenzo Gabriel Marquez</h1>
@@ -234,259 +195,165 @@
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#social">Socials</a>
-        <a href="#contact">Contact</a>
-        <a href="CV_LorenzoMarquez.docx" download class="nav-cv">Download CV</a>
+        <a href="CV_LorenzoMarquez.docx" download class="navCv">Download CV</a>
       </nav>
     </header>
 
     <main>
       <section id="about">
-        <h2 id="about-title">About</h2>
+        <h2>About</h2>
         <p>
           I am a Computer Science Technology student at LaSalle College
           specializing in Video Game Programming. I develop games using C++, C#,
-          Unity, Unreal Engine. I am passionate about videogame programming and
-          creating polished interactive experiences.
+          Unity, and Unreal Engine, with a focus on polished interactive
+          experiences and clean gameplay systems.
         </p>
         <ul>
-          <li>Game Programming (C++, C#, Blueprints)</li>
-          <li>Software Development & Object-Oriented Programming</li>
-          <li>Experience with Unity, Unreal Engine, and Visual Studio</li>
-          <li>
-            Strong interest in gameplay systems, tools, UI, and level design
-          </li>
+          <li>Game programming and gameplay systems</li>
+          <li>Object-oriented software development</li>
+          <li>Unity, Unreal Engine, and Visual Studio</li>
+          <li>Level design, mechanics, and UI logic</li>
           <li>Based in Montreal, Canada</li>
         </ul>
       </section>
 
       <section id="projects">
-        <h2 id="projects-title">Projects</h2>
+        <h2>Projects</h2>
+        <p>
+          A selection of game and programming projects that highlight my
+          experience with Unreal, Unity, C++, C#, and data structures in real,
+          playable projects.
+        </p>
 
-        <div class="projects">
-          <article>
-            <header>
-              <h3>Infinite Trigger – Shooter Game</h3>
-            </header>
-            <img
-              src="inftrigger2.img"
-              alt="Infinite Trigger Logo"
-              class="project-logo"
-            />
-            <ul>
-              <li>
-                Third-person shooter built in Unreal Engine using Blueprints
-              </li>
-              <li>Wave-based enemy spawning system and navmesh enemy AI</li>
-              <li>Custom abilities: dash, slow-motion, double jump</li>
-              <li><a href="infinite-trigger.html">More details</a></li>
-            </ul>
-          </article>
+        <div class="projectGrid">
+          <a href="infinite-trigger.html">
+            <article class="projectCard">
+              <h3>Infinite Trigger</h3>
+              <ul class="skillList">
+                <li>Unreal Engine</li>
+                <li>Blueprints</li>
+                <li>Third-person shooter</li>
+              </ul>
+            </article>
+          </a>
 
-          <article>
-            <header>
+          <a href="leapcity.html">
+            <article class="projectCard">
               <h3>LeapCity – Parkour Game</h3>
-            </header>
-            <img src="leapcity1.img" alt="LeapCity Logo" class="project-logo" />
-            <ul>
-              <li>Parkour movement system</li>
-              <li>Increasing level difficulty and progression</li>
-              <li>Focus on smooth controls and challenge flow</li>
-              <li><a href="leapcity.html">More details</a></li>
-            </ul>
-          </article>
+              <ul class="skillList">
+                <li>Unity</li>
+                <li>C#</li>
+                <li>3D parkour</li>
+              </ul>
+            </article>
+          </a>
 
-          <article>
-            <header>
-              <h3>Object Oriented 2 Project – Monster Hunter</h3>
-            </header>
-            <ul>
-              <li>
-                Monster Hunter–style game built using Windows Forms and C#
-              </li>
-              <li>
-                Features map exploration, turn-based combat, and item pickups
-              </li>
-              <li>
-                Implements full OOP architecture: inheritance, polymorphism,
-                interfaces
-              </li>
-              <li><a href="monsterhunter.html">More details</a></li>
-            </ul>
-          </article>
+          <a href="monsterhunter.html">
+            <article class="projectCard">
+              <h3>Monster Hunter</h3>
+              <ul class="skillList">
+                <li>C#</li>
+                <li>.NET Windows Forms</li>
+                <li>OOP architecture</li>
+              </ul>
+            </article>
+          </a>
 
-          <article>
-            <header>
-              <h3>Advanced Data Structures Project – ShopSimulator</h3>
-            </header>
-            <ul>
-              <li>
-                Console-based shop system featuring a Rock-Paper-Scissors
-                minigame to earn money
-              </li>
-              <li>
-                Uses trees to organize shop categories (clothes, food, games)
-                and navigate items
-              </li>
-              <li>
-                Implements stacks for purchase history (LIFO) and recursion for
-                tree traversal
-              </li>
-              <li>Includes OOP classes for money management and store items</li>
-              <li><a href="shopSimulator.html">More details</a></li>
-            </ul>
-          </article>
+          <a href="shopSimulator.html">
+            <article class="projectCard">
+              <h3>ShopSimulator</h3>
+              <ul class="skillList">
+                <li>C++</li>
+                <li>Trees & stacks</li>
+                <li>Console app</li>
+              </ul>
+            </article>
+          </a>
 
-          <article>
-            <header>
-              <h3> WIP- LeapCity2 – Parkour Game</h3>
-            </header>
-            <ul>
-              <li>Work in progress </li>
-              <li>Second version of LeapCity focusing on overall improvements and a different engine</li>
-              <li>Added more features to improve upon the original</li>
-              <li><a href="leapcity2.html">More details</a></li>
-            </ul>
-          </article>
-
-          <article>
-            <header>
-              <h3>LeapCity – Parkour Game</h3>
-            </header>
-            <img
-              src="inftrigger.img"
-              alt="LeapCity Logo"
-              class="project-logo"
-            />
-            <ul>
-              <li>Parkour movement system with sliding and vaults</li>
-              <li>Increasing level difficulty and progression</li>
-              <li>Focus on smooth controls and challenge flow</li>
-              <li><a href="leapcity.html">More details</a></li>
-            </ul>
-          </article>
-
-          <article>
-            <header>
-              <h3>LeapCity – Parkour Game</h3>
-            </header>
-            <img
-              src="inftrigger.img"
-              alt="LeapCity Logo"
-              class="project-logo"
-            />
-            <ul>
-              <li>Parkour movement system with sliding and vaults</li>
-              <li>Increasing level difficulty and progression</li>
-              <li>Focus on smooth controls and challenge flow</li>
-              <li><a href="leapcity.html">More details</a></li>
-            </ul>
-          </article>
-
-          <article>
-            <header>
-              <h3>LeapCity – Parkour Game</h3>
-            </header>
-            <img
-              src="inftrigger.img"
-              alt="LeapCity Logo"
-              class="project-logo"
-            />
-            <ul>
-              <li>Parkour movement system with sliding and vaults</li>
-              <li>Increasing level difficulty and progression</li>
-              <li>Focus on smooth controls and challenge flow</li>
-              <li><a href="leapcity.html">More details</a></li>
-            </ul>
-          </article>
+          <a href="leapcity2.html">
+            <article class="projectCard">
+              <h3>LeapCity v2 (WIP)</h3>
+              <ul class="skillList">
+                <li>Refined movement</li>
+                <li>Level blockouts</li>
+                <li>Engine upgrade</li>
+              </ul>
+            </article>
+          </a>
         </div>
       </section>
 
       <section id="skills">
-        <h2 id="skills-title">Skills</h2>
+        <h2>Skills</h2>
+        <p>Technologies and tools I use regularly in my projects.</p>
 
-        <div class="skills">
-          <div class="skill-group">
+        <div class="skillsGrid">
+          <div class="skillGroup">
             <h3>Languages</h3>
-            <ul class="skill-list">
+            <ul class="skillList">
               <li>C++</li>
               <li>C#</li>
               <li>Java</li>
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
+              <li>SQL</li>
             </ul>
           </div>
 
-          <div class="skill-group">
-            <h3>Software and Tools</h3>
-            <ul class="skill-list">
+          <div class="skillGroup">
+            <h3>Software</h3>
+            <ul class="skillList">
               <li>Unity</li>
               <li>Unreal Engine</li>
               <li>Blueprints</li>
               <li>SQL (Oracle)</li>
               <li>Lua (Roblox Studio)</li>
               <li>Visual Studio</li>
+              <li>VS Code</li>
+              <li>Unreal Editor</li>
+              <li>Unity Editor</li>
             </ul>
           </div>
 
-          <div class="skill-group">
+          <div class="skillGroup">
             <h3>Other</h3>
-            <ul class="skill-list">
+            <ul class="skillList">
               <li>Object-Oriented Programming</li>
               <li>Git</li>
+              <li>GitHub</li>
               <li>Perforce</li>
               <li>Level Design</li>
               <li>Debugging</li>
               <li>Optimization</li>
+              <li>Gameplay Systems</li>
+              <li>Enemy AI Basics</li>
+              <li>UI & HUD Logic</li>
             </ul>
           </div>
         </div>
       </section>
 
       <section id="social">
-        <h2 id="resume-title">Find Me Online</h2>
-
-        <div class="social-links">
+        <h2>Find Me Online</h2>
+        <p>See more of my work and connect with me here.</p>
+        <div class="socialLinks">
           <a
             href="https://www.linkedin.com/in/lorenzo-marquez-2b9537354/"
             target="_blank"
-            class="social-card"
+            class="socialCard"
           >
-            <img src="LinkedIn_icon.svg.png" alt="LinkedIn Logo" />
-            <span>LinkedIn</span>
+            <img src="LinkedIn_icon.svg.png" />
           </a>
 
           <a
             href="https://github.com/Mizuk1nam"
             target="_blank"
-            class="social-card"
+            class="socialCard"
           >
-            <img src="GitHub_Invertocat_Logo.svg" alt="GitHub Logo" />
-            <span>GitHub</span>
+            <img src="GitHub_Invertocat_Logo.svg" />
           </a>
         </div>
-      </section>
-
-      <section id="contact">
-        <h2 id="contact-title">Contact</h2>
-        <p>
-          Feel free to reach out for collaboration, internship opportunities, or
-          project inquiries. I’m always open to connecting with other developers
-          and creators.
-        </p>
-
-        <form>
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" required />
-
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required />
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-
-          <button type="submit">Send</button>
-        </form>
       </section>
     </main>
 
