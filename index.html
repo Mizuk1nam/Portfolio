@@ -135,17 +135,17 @@
         border-color: #00c3ff;
       }
 
-   .skillsGrid {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  margin-top: 20px;
-}
+      .skillsGrid {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 20px;
+      }
 
-.skillGroup {
-  width: 100%;
-  flex: none;
-}
+      .skillGroup {
+        width: 100%;
+        flex: none;
+      }
 
       .skillList {
         list-style: none;
@@ -182,6 +182,69 @@
       .socialCard img {
         width: 55px;
         margin-bottom: 12px;
+      }
+      @media (max-width: 900px) {
+        body {
+          font-size: 16px;
+        }
+
+        section {
+          padding: 30px 16px;
+        }
+
+        .projectGrid {
+          gap: 16px;
+        }
+
+        .projectGrid a {
+          flex: 1 1 45%;
+          max-width: 100%;
+        }
+
+        .skillGroup {
+          padding: 16px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        header {
+          padding: 30px 16px;
+        }
+
+        header h1 {
+          font-size: 24px;
+        }
+
+        header p {
+          font-size: 16px;
+        }
+
+        nav {
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        nav a {
+          width: 100%;
+          text-align: center;
+        }
+
+        section p {
+          font-size: 16px;
+        }
+
+        .projectGrid a {
+          flex: 1 1 100%;
+          max-width: 100%;
+        }
+
+        .projectCard {
+          padding: 16px;
+        }
+
+        .skillsGrid {
+          gap: 16px;
+        }
       }
     </style>
   </head>
